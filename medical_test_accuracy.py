@@ -17,7 +17,7 @@ def main():
 	else:
 		e2 = float(e2)
 
-	print "the chances of having a disease with a probability of " + str(e1) + " given an accuracy rate of " + str(acc) + " and a false positive rate of " + str(false_pos) + " are " + "{0:.2f}".format(bayesian_probability(e1, e2, acc) * 100) + "%"
+	print "the probability of having a disease with a rarity of " + str(e1) + " given an accuracy rate of " + str(acc) + " and a false positive rate of " + str(false_pos) + " is " + "{0:.2f}".format(bayesian_probability(e1, e2, acc) * 100) + "%"
 '''
 A simple implementation of bayes theorm: P(event1|event2) = (P(event1) * P(event2|event1)) / P(event2)
 @param1 - probability of event1 
